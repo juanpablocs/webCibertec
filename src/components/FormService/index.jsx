@@ -29,14 +29,14 @@ const FormService = ({
     let res = { ...data, type: data?.type?.value };
     if (!editMode) {
       if (window.confirm("Estas seguro de crear este servicio")) {
-        createService(res);
+        await createService(res);
         let data = await getServices();
         setServices(data);
         handleCancel();
       }
     } else {
       if (window.confirm("Estas seguro de actualizar este servicio")) {
-        editService(res, serviceId);
+        await editService(res, serviceId);
         let data = await getServices();
         setServices(data);
         handleCancel();
@@ -103,15 +103,15 @@ const FormService = ({
           </Form.Group>
         </Form>
         <Card.Footer className="px-4 py-3">
-          <Button variant="outline-success" onClick={handleSubmit(onSubmit)}>
+          <Button variant="success" onClick={handleSubmit(onSubmit)}>
             {editMode ? "Editar" : "Grabar"}
           </Button>
           <Button
-            variant="outline-danger"
+            variant="danger"
             className="ml-2"
             onClick={handleCancel}
           >
-            Cancelar
+            Limpiar
           </Button>
         </Card.Footer>
       </Card.Body>

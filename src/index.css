@@ -7,3 +7,11 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+.text-truncate-2 {
+  -webkit-line-clamp: 21;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

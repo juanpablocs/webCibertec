@@ -10,3 +10,13 @@ export default async function getServices() {
     return [];
   }
 }
+
+export async function getService(id) {
+  try {
+    const services = await axios.get(`${apiURL}/services/${id}`);
+    const res = services.data;
+    return res;
+  } catch (error) {
+    return {};
+  }
+}
