@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "name": "Electricidad",
+      "description": "Lorem ipsum, dolor sit amet consectetur adispisicing elt.",
+      "type": "hogar",
+      "id": 1
+    },
+    {
+      "name": "Auxilio Mecanico",
+      "description": "Lorem ipsum, dolor sit amet consectetur adispisicing elt.",
+      "type": "autos",
+      "id": 2
+    },
+    {
+      "name": "Chofer reemplazo",
+      "description": "Lorem ipsum, dolor sit amet consectetur adispisicing elt.",
+      "type": "autos",
+      "id": 3
+    },
+    {
+      "name": "Medico a domicilio",
+      "description": "Lorem ipsum, dolor sit amet consectetur adispisicing elt.",
+      "type": "salud",
+      "id": 4
+    },
+    {
+      "name": "Ambulancia2",
+      "description": "Lorem ipsum, dolor sit amet consectetur adispisicing elt.",
+      "type": "salud",
+      "id": 5
+    },
+    {
+      "name": "Gasfitero",
+      "description": "Lorem ipsum, dolor sit amet consectetur adispisicing elt.",
+      "type": "hogar",
+      "id": 6
+    }
+  ]
+}
