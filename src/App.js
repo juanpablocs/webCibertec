@@ -5,6 +5,7 @@ import HogarPage from "./pages/HogarPage";
 import HomePage from "./pages/HomePage";
 import SaludPage from "./pages/SaludPage";
 import DetailPage from "./pages/DetailPage";
+import Prueba from './components/Prueba/Prueba';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/salud" element={<SaludPage />} />
         <Route path="/hogar" element={<HogarPage />} />
         <Route path="/detalle/:id" element={<DetailPage />} />
+        <Route path="/prueba" element={<Prueba />} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,10 +9,18 @@ a:hover {
 }
 
 .text-truncate-2 {
-  -webkit-line-clamp: 21;
+  -webkit-line-clamp: 2;
   overflow : hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   height: 52px;
+}
+
+.card-title a {
+  -webkit-line-clamp: 1;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }

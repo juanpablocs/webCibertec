@@ -45,6 +45,14 @@
       "phone": "980742802",
       "type": "hogar",
       "id": 7
+    },
+    {
+      "name": "Soy Carpintero",
+      "description": "Hago todo tipo de muebles con melamina a todo costo.\n\nPueden contactarme al numero xxxx",
+      "imagen": "https://www.shutterstock.com/image-photo/carpenter-worker-work-carpentry-workshop-260nw-1924568534.jpg",
+      "phone": "980742802",
+      "type": "hogar",
+      "id": 8
     }
   ]
 }
