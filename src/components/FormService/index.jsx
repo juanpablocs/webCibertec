@@ -45,7 +45,7 @@ const FormService = ({
   };
 
   const handleCancel = () => {
-    reset({ name: "", description: "", type: null });
+    reset({ name: "", description: "", imagen:'', phone:'', type: null });
     setEditMode(false);
   };
 

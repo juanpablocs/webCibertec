@@ -22,11 +22,14 @@ const DetailPage = () => {
     <Container fluid>
       <Row className="mt-4">
         <Col xs={12}>
-          <Row className="d-flex flex-column align-items-center m-auto">
+          <Row className="d-flex flex-column align-items-center m-auto" style={{maxWidth:'900px'}}>
            <h1>{service.name}</h1>
-           {service.imagen && <img src={service.imagen} style={{width:'100%', maxWidth:'80%'}} />}
-           <p>{service.description}</p>
+           {service.imagen && <img src={service.imagen} style={{width:'100%', maxWidth:'50%'}} />}
+           <br />
+           {service?.description?.split('\n')?.map((text, k) => <p key={k}>{text}</p>)}
            <Button variant='success' onClick={()=>handlerClickWtsp(service?.phone)}>Contactar Anunciante</Button>
+           <br />
+           <br />
           </Row>
         </Col>
       </Row>

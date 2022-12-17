@@ -34,7 +34,17 @@
       "name": "Gasfitero",
       "description": "Lorem ipsum, dolor sit amet consectetur adispisicing elt.",
       "type": "hogar",
-      "id": 6
+      "id": 6,
+      "imagen": "",
+      "phone": "980742802"
+    },
+    {
+      "name": "Trabajos de construcción y acabados",
+      "description": "Incluye: Realizamos trabajos de construcción desde cero ( Zapatas, sobrecimientos, columnas, asentado de ladrillo, encofrados de techo, tarrajeo, piso pulido y frotachado, remodelación en general)\n\nEnchapado de cerámica y porcelanato\nGasfitería Instalación de agua fría y caliente , instalación de lavaderos inodoros, filtraciones, cambio de griferías.\n\nPintado de casas, departamentos, locales, colegios, fachadas, pintado de madera , fierro ,etc.\n\nNo Incluye: Materiales - Información Adicional: Realice su presupuesto sin compromiso",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_740094-MPE51893070400_102022-F.webp",
+      "phone": "980742802",
+      "type": "hogar",
+      "id": 7
     }
   ]
 }
