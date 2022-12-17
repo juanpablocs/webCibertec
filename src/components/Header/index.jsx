@@ -4,9 +4,20 @@ import { NavLink } from "react-router-dom";
 import style from "./index.module.css";
 
 const Header = () => {
+  const [date, setDate] = React.useState(new Date());
+  React.useEffect(() => {
+
+    const interval = setInterval(()=>{
+      setDate(new Date());
+    }, 100);
+    return () => clearInterval(interval)
+  }, []);
   return (
     <header>
-      <h1 className={style.header_title}>Servicios</h1>
+      <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', paddingBottom:20}}>
+        <h1 className={style.header_title}>Servicios</h1>
+        <span>Fecha y Hora: {date.toLocaleDateString()} {date.toLocaleTimeString()}</span>
+      </div>
       <Navbar bg="light" variant="light"  style={{justifyContent:'center'}}>
         <Nav>
           <Nav.Link as='span'>

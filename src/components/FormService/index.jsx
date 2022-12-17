@@ -84,6 +84,24 @@ const FormService = ({
             <p className="text-danger">{errors.description?.message}</p>
           </Form.Group>
           <Form.Group className="mb-3">
+            <Form.Label>Imagen</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese url"
+              {...register("imagen")}
+            />
+            <p className="text-danger">{errors.imagen?.message}</p>
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>whatsapp</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese Numero"
+              {...register("phone")}
+            />
+            <p className="text-danger">{errors.phone?.message}</p>
+          </Form.Group>
+          <Form.Group className="mb-3">
             <Form.Label>Tipo</Form.Label>
             <Controller
               name="type"
